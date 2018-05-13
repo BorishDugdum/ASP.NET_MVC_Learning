@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+System Time: @ViewBag.SysTime
+
+<form action="/" method="post">
+    @Html.AntiForgeryToken()
+    <input type="text" name="txtDemo" />
+    <input type="submit" name="btnSubmit" value="Submit" />
+</form>
+
+<script>alert('BOO')</script>
+
+<br />
+Demo = @ViewBag.Demo
+<br />
+Raw Demo = @Html.Raw(ViewBag.Demo)
+
+<br/>
+<br/>
+<iframe 
+        width="560" height="315" src="https://www.youtube.com/embed/nNps1VorqtE" 
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+</iframe>
